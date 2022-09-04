@@ -1,0 +1,191 @@
+﻿@charset "utf-8";
+/*总体布局*/
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+td {
+	font-size:12px;
+}
+/*导航目录链接*/
+.top_nav a
+{
+	font-family:"宋体";
+	color: #000000;
+	text-decoration: none;
+}
+/*导航目录链接*/
+.menu_font {
+	color: #ffffff;
+	text-decoration: none;
+}
+/*中部栏目*/
+.title {
+	font-family:"宋体";
+	font-size:12px;
+	color:#000000;
+}
+.titlemide {
+	padding-left:10px;
+	font-family:"黑体";
+	font-size:14px;
+	font-weight:bold;
+	color:#ffffff;
+}
+.more {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	float:right;
+	color: #8e8e8e!important;
+	text-decoration: none!important;
+}
+/*中部内容*/
+.box ul 
+{
+	padding: 0;
+	margin:0px 0 0px 0px;
+	list-style:none;
+}
+.box ul li 
+{
+	padding: 0;
+	line-height:22px;
+	background-image:url(index_box_bg.gif);
+}
+.box ul li a {
+	font-size: 9pt;
+}
+
+.box2 ul 
+{
+	padding: 0;
+	margin:0px 0 0px 0px;
+	list-style:none;
+}
+.box2 ul li 
+{
+	padding: 0;
+	line-height:20px;
+}
+.box2 ul li a {
+	font-size: 9pt;
+	color: #3399FF;
+}
+
+
+
+/*底部版权*/
+.bottom_nav span{
+	padding:0 20px;
+	color:#6e6e6e;
+}
+.info {
+	font-size:12px;
+	color:#a7a7a7;
+	line-height:18px;
+	padding:5px 0;
+}
+/*nav页中部*/
+.sub_title {
+	font-family: "黑体", "微软雅黑";
+	font-size: 22px;
+	font-weight: bold;
+	color: #0158b5;
+}
+.lst1 {
+	font-size: 9pt;
+    font-weight: bold;
+	color: #0000FF;
+	cursor: pointer;
+	margin-right: 13px;
+}
+.navbodyhead_left {
+	width:980px;
+	background: url('aolan_navbody_bottom.png') repeat-x bottom;
+}
+.column {
+	font-size:14px;
+	color:#3c638e;
+	font-weight:bold;
+	line-height:30px;
+	padding: 0 5px 0 5px;
+}
+.columnchange {
+	background: url('aolan_navcolumn.png') no-repeat center;
+	font-size:14px;
+	color:#3c638e;
+	font-weight:bold;
+	line-height:30px;
+	padding-left:5px; padding-right:5px; padding-top:0; padding-bottom:0
+}
+.columnchild {
+	font-size:12px;
+	color:#3c638e;
+	line-height:30px;
+	padding: 0 5px 0 15px;
+}
+.columnchildchange {
+	background: url('aolan_navcolumn.png') no-repeat center;
+	font-size:12px;
+	color:#3c638e;
+	font-weight:bold;
+	line-height:30px;
+	padding-left:15px; padding-right:5px; padding-top:0; padding-bottom:0
+}
+
+.time {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	color: #999;
+}
+.point {
+	font-family: Webdings;
+}
+hr {
+	color: #F90;
+}
+.lst0 {
+	font-size: 14px;
+	color: #FFFFFF;
+	margin-right: 13px;
+	font-weight: bold;
+	background-image: none;
+}
+.lstd {
+	background-image: url(bot01.jpg);
+}
+.news {
+	font-size: 14px;
+	color: #333333;
+	list-style-type: disc;
+	list-style-position: inside;
+	list-style-image: none;
+	display: list-item;
+}
+.news:hover {
+	color: #0066CC;
+}
+.newstd {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+
+.pageNav{ clear:both; height:22px;margin:18px 0;padding-left:60px; font-family:Arial, Helvetica, sans-serif; font-size:14px}
+.pageNav a,.pageNav strong,.pageNav span{ display:block; float:left; padding:0 8px; overflow:hidden; margin-right:5px; background:#fff}
+.pageNav a,.pageNav span{ height:20px; line-height:22px; border:1px solid #CCDBE4}
+.pageNav a.f12,.pageNav strong.f12,.pageNav span{ font-size:12px}
+.pageNav a:hover{ text-decoration:none}
+.pageNav strong{ height:22px; line-height:24px}
+.pageNav .mor{border:0;padding:0;height:21px;line-height:21px}
+.pageNav .na{color:#DBE1E6}

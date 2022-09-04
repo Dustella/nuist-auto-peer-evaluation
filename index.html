@@ -1,0 +1,954 @@
+<!-- saved from url=(0134)https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=05 -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script
+      type="text/javascript"
+      src="./resources/bundle.debug.js.download"
+      charset="utf-8"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./resources/sdmenu.js.download"
+    ></script>
+    <script>
+      (function () {
+        class RuffleMimeType {
+          constructor(a, b, c) {
+            (this.type = a), (this.description = b), (this.suffixes = c);
+          }
+        }
+        class RuffleMimeTypeArray {
+          constructor(a) {
+            (this.__mimetypes = []), (this.__named_mimetypes = {});
+            for (let b of a) this.install(b);
+          }
+          install(a) {
+            let b = this.__mimetypes.length;
+            this.__mimetypes.push(a),
+              (this.__named_mimetypes[a.type] = a),
+              (this[a.type] = a),
+              (this[b] = a);
+          }
+          item(a) {
+            return this.__mimetypes[a];
+          }
+          namedItem(a) {
+            return this.__named_mimetypes[a];
+          }
+          get length() {
+            return this.__mimetypes.length;
+          }
+        }
+        class RufflePlugin extends RuffleMimeTypeArray {
+          constructor(a, b, c, d) {
+            super(d),
+              (this.name = a),
+              (this.description = b),
+              (this.filename = c);
+          }
+          install(a) {
+            a.enabledPlugin || (a.enabledPlugin = this), super.install(a);
+          }
+        }
+        class RufflePluginArray {
+          constructor(a) {
+            (this.__plugins = []), (this.__named_plugins = {});
+            for (let b of a) this.install(b);
+          }
+          install(a) {
+            let b = this.__plugins.length;
+            this.__plugins.push(a),
+              (this.__named_plugins[a.name] = a),
+              (this[a.name] = a),
+              (this[b] = a);
+          }
+          item(a) {
+            return this.__plugins[a];
+          }
+          namedItem(a) {
+            return this.__named_plugins[a];
+          }
+          get length() {
+            return this.__plugins.length;
+          }
+        }
+        const FLASH_PLUGIN = new RufflePlugin(
+          "Shockwave Flash",
+          "Shockwave Flash 32.0 r0",
+          "ruffle.js",
+          [
+            new RuffleMimeType(
+              "application/futuresplash",
+              "Shockwave Flash",
+              "spl"
+            ),
+            new RuffleMimeType(
+              "application/x-shockwave-flash",
+              "Shockwave Flash",
+              "swf"
+            ),
+            new RuffleMimeType(
+              "application/x-shockwave-flash2-preview",
+              "Shockwave Flash",
+              "swf"
+            ),
+            new RuffleMimeType(
+              "application/vnd.adobe.flash-movie",
+              "Shockwave Flash",
+              "swf"
+            ),
+          ]
+        );
+        function install_plugin(a) {
+          navigator.plugins.install ||
+            Object.defineProperty(navigator, "plugins", {
+              value: new RufflePluginArray(navigator.plugins),
+              writable: !1,
+            }),
+            navigator.plugins.install(a),
+            0 < a.length &&
+              !navigator.mimeTypes.install &&
+              Object.defineProperty(navigator, "mimeTypes", {
+                value: new RuffleMimeTypeArray(navigator.mimeTypes),
+                writable: !1,
+              });
+          for (var b = 0; b < a.length; b += 1)
+            navigator.mimeTypes.install(a[b]);
+        }
+        install_plugin(FLASH_PLUGIN);
+      })();
+    </script>
+    <script src="chrome-extension://gcmgaphlohnhdgfbefpphkhnaijglnci/dist/ruffle.js?id=34447727856"></script>
+    <script type="text/javascript">
+      var myMenu;
+      window.onload = function () {
+        myMenu = new SDMenu("my_menu");
+        myMenu.init();
+        myMenu.expandMenu(myMenu.submenus[0]);
+        // load1();
+      };
+      function xzdm(a, b, c, d) {
+        if (b.replace(/(\s*$)/g, "") > "") {
+          xfl.innerHTML = b;
+        }
+        form1.km.value = a;
+        switch (form1.km.value) {
+          case "st_dkcp":
+            document.getElementById("r_3_3").src =
+              "dkkt.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_dxpg":
+            document.getElementById("r_3_3").src =
+              "dxpg.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_mzpy":
+            document.getElementById("r_3_3").src =
+              "mzpy.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            //document.getElementById("r_3_3").src="mzpy.aspx";
+            break;
+          case "st_zhcpj":
+            document.getElementById("r_3_3").src =
+              "zhcp.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_xlzx":
+            document.getElementById("r_3_3").src =
+              "/xlzx/xlzx.aspx?xq=" +
+              form1.xq_xz.value +
+              "&km=" +
+              form1.km.value;
+            break;
+          case "st_kc_fdy":
+            document.getElementById("r_3_3").src =
+              "cpkhf.aspx?xq=" +
+              form1.xq_xz.value +
+              "&nd=" +
+              form1.nd.value +
+              "&km=" +
+              form1.km.value;
+            break;
+          default:
+            switch (form1.km.value.substr(0, 6)) {
+              case "st_zh_":
+                document.getElementById("r_3_3").src =
+                  "zhtx.aspx?xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                break;
+              case "st_cg_":
+                document.getElementById("r_3_3").src =
+                  "cgsq.aspx?xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                break;
+              case "st_hp_":
+                document.getElementById("r_3_3").src =
+                  "sthp.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "tm_py_":
+                document.getElementById("r_3_3").src =
+                  "fdypy.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value +
+                  "&tmfl=" +
+                  encodeURIComponent(d);
+                break;
+              case "tm_ks_":
+                document.getElementById("r_3_3").src =
+                  "dkkt.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value +
+                  "&tmfl=" +
+                  encodeURIComponent(d);
+                break;
+              case "tm_wj_":
+                document.getElementById("r_3_3").src =
+                  "/wjdc/wjkt.aspx?tmfl=" +
+                  encodeURIComponent(d) +
+                  "&xq=" +
+                  form1.xq_xz.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "st_tp_":
+                document.getElementById("r_3_3").src =
+                  "tpkt.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "st_cp_":
+                document.getElementById("r_3_3").src =
+                  "khcp.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "st_kc_":
+                document.getElementById("r_3_3").src =
+                  "cpkh.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              default:
+                if (form1.km.value.substr(0, 9) == "st_rc_zx_") {
+                  document.getElementById("r_3_3").src =
+                    "/xlzx/xlzx.aspx?xq=" +
+                    form1.xq_xz.value +
+                    "&km=" +
+                    form1.km.value;
+                } else {
+                  if (navigator.userAgent.indexOf(" MSIE ") > 0) {
+                    document.getElementById("r_3_3").src =
+                      "rsbulid/r_3_3_" +
+                      form1.km.value +
+                      ".aspx?xq=" +
+                      form1.xq_xz.value +
+                      "&nd=" +
+                      form1.nd.value;
+                  } else {
+                    document.getElementById("r_3_3").src =
+                      "rsbulid/r_3_3_" +
+                      form1.km.value +
+                      ".aspx?xq=" +
+                      form1.xq_xz.value +
+                      "&nd=" +
+                      form1.nd.value +
+                      "&msie=1";
+                  }
+                }
+            }
+        }
+        var pa = document.getElementById("xqxz_xs");
+        form1.xqbz.value = c;
+        if (form1.xqbz.value == "1") {
+          pa.style.display = "";
+        } else {
+          pa.style.display = "none";
+        }
+      }
+      function load1() {
+        if (form1.km.value == "") {
+          document.getElementById("r_3_3").src = "r_3_3_0.aspx";
+          return;
+        }
+        switch (form1.km.value) {
+          case "st_dkcp":
+            document.getElementById("r_3_3").src =
+              "dkkt.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_dxpg":
+            document.getElementById("r_3_3").src =
+              "dxpg.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_mzpy":
+            document.getElementById("r_3_3").src =
+              "mzpy.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_zhcpj":
+            document.getElementById("r_3_3").src =
+              "zhcp.aspx?xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+          case "st_xlzx":
+            document.getElementById("r_3_3").src =
+              "/xlzx/xlzx.aspx?xq=" +
+              form1.xq_xz.value +
+              "&km=" +
+              form1.km.value;
+            break;
+          case "st_kc_fdy":
+            document.getElementById("r_3_3").src =
+              "cpkhf.aspx?xq=" +
+              form1.xq_xz.value +
+              "&nd=" +
+              form1.nd.value +
+              "&km=" +
+              form1.km.value;
+            break;
+          default:
+            switch (form1.km.value.substr(0, 6)) {
+              case "st_zh_":
+                document.getElementById("r_3_3").src =
+                  "zhtx.aspx?xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                break;
+              case "st_cg_":
+                document.getElementById("r_3_3").src =
+                  "cgsq.aspx?xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                break;
+              case "st_hp_":
+                document.getElementById("r_3_3").src =
+                  "sthp.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "tm_py_":
+                document.getElementById("r_3_3").src =
+                  "fdypy.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value +
+                  "&tmfl=" +
+                  encodeURIComponent(d);
+                break;
+              case "tm_ks_":
+                document.getElementById("r_3_3").src =
+                  "dkkt.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value +
+                  "&tmfl=" +
+                  encodeURIComponent(d);
+                break;
+              case "tm_wj_":
+                document.getElementById("r_3_3").src =
+                  "/wjdc/wjkt.aspx?tmfl=" +
+                  encodeURIComponent(d) +
+                  "&xq=" +
+                  form1.xq_xz.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "st_tp_":
+                document.getElementById("r_3_3").src =
+                  "tpkt.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "st_cp_":
+                document.getElementById("r_3_3").src =
+                  "khcp.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              case "st_kc_":
+                document.getElementById("r_3_3").src =
+                  "cpkh.aspx?xq=" +
+                  form1.xq_xz.value +
+                  "&nd=" +
+                  form1.nd.value +
+                  "&km=" +
+                  form1.km.value;
+                break;
+              default:
+                if (form1.km.value.substr(0, 9) == "st_rc_zx_") {
+                  document.getElementById("r_3_3").src =
+                    "/xlzx/xlzx.aspx?xq=" +
+                    form1.xq_xz.value +
+                    "&km=" +
+                    form1.km.value;
+                } else {
+                  document.getElementById("r_3_3").src =
+                    "rsbulid/r_3_3_" +
+                    form1.km.value +
+                    ".aspx?xq=" +
+                    form1.xq_xz.value +
+                    "&nd=" +
+                    form1.nd.value;
+                }
+            }
+        }
+      }
+    </script>
+
+    <meta http-equiv="Content-Language" content="zh-cn" />
+
+    <title>奥蓝学生管理信息系统(学生版)</title>
+    <link
+      href="./resources/css_index.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/sdmenu.css"
+    />
+    <style type="text/css">
+      .xq {
+        color: #ffff00;
+        background-color: #006fd2;
+        font-size: 9pt;
+        height: 20;
+        font-family: Arial;
+      }
+    </style>
+  </head>
+  <body style="margin-top: 0; margin-left: 0" bgcolor="#F8F8F8">
+    <form
+      name="form1"
+      method="post"
+      action="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=05"
+      id="form1"
+    >
+      <input
+        type="hidden"
+        name="__VIEWSTATE"
+        id="__VIEWSTATE"
+        value="BvkVDtaTTI5PKAWEhwFzflE94UdYZKyIJXf0Fcw3BQ2MRhPtTSOhXd66q+HLxFkvyzFe1lD3eOo4OGwX1ZrbiUxGe/ouLIttnk0SbvFK7JFAuwqI1Tta1ZwIhPihXaNW7irvvA20DQETgOQbcZLPjP77mBqf5EBCzG692/32XLKnidgSdz95nPadeCffm6K6HutuGRdlOjrL9AX24lpf1mFblEt/IpB08JGmTHXLBvo80shN+pajT1aeMWBKFzyhjpPe6XThfO/SWJuA7pjsj6Z+QMS79TzLXiN4ne9ixZzhSoHi1U69YM0gtZNUOv7m+nGEqxHE4LuyhVmCuoYSUJr9adjMYWtxslS/pgzwZf/yUHxkkFYpeLfK7ka1ZagazsSu2xsvesDDRsQvPzzd6AACRdgJVwY9mBWevO93mjPBe0JcQOBk3JaB3t7/NLPdKLTyQl6z0RW7xt+fKHtQEQXYSUM="
+      />
+
+      <input
+        type="hidden"
+        name="__VIEWSTATEGENERATOR"
+        id="__VIEWSTATEGENERATOR"
+        value="5223E9DF"
+      />
+      <input
+        type="hidden"
+        name="__VIEWSTATEENCRYPTED"
+        id="__VIEWSTATEENCRYPTED"
+        value=""
+      />
+      <table
+        width="1002"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        background="./resources/bodyBg.gif"
+      >
+        <tbody>
+          <tr>
+            <td
+              width="24"
+              background="./resources/bodyBg.gif"
+            >
+              &nbsp;
+            </td>
+            <td align="center" width="952">
+              <script type="text/javascript">
+                enlink_eval(
+                  function () {
+                    function xzdmsz() {
+                      if (
+                        window.navigator.userAgent.indexOf("AppleWebKit") != -1
+                      ) {
+                        another = open(
+                          "/syssz.aspx",
+                          "",
+                          "left=300, top=250, width=600, height=300, status=no, resizable=no,directories=no, location=no, menubar=no, scrollbars=no, titlebar=no,toolbar=no"
+                        );
+                      } else {
+                        if (navigator.userAgent.indexOf(" MSIE ") > 0) {
+                          another = showModalDialog(
+                            "/syssz.aspx",
+                            "",
+                            "dialogheight:26;dialogwidth:40;help:no;status:no;resizable:no"
+                          );
+                        } else {
+                          try {
+                            another = showModalDialog(
+                              "/syssz.aspx",
+                              "",
+                              "dialogheight:300px;dialogwidth:700px;help:no;status:no;resizable:yes"
+                            );
+                          } catch (err) {
+                            another = open(
+                              "/syssz.aspx",
+                              "",
+                              "left=300, top=250, width=500, height=300, status=no, resizable=no,directories=no, location=no, menubar=no, scrollbars=no, titlebar=no,toolbar=no"
+                            );
+                          }
+                        }
+                      }
+                    }
+
+                    function mobile() {
+                      parent.location = "/mobile/";
+                    }
+
+                    function xzyhlx() {
+                      p0 = new Array("");
+                      if (
+                        window.navigator.userAgent.indexOf("AppleWebKit") != -1
+                      ) {
+                        another = open(
+                          "/xzyhlx.aspx",
+                          "",
+                          "left=250, top=200, width=300, height=200, status=no, resizable=no,directories=no, location=no, menubar=no, scrollbars=no, titlebar=no,toolbar=no"
+                        );
+                        another = null;
+                        return;
+                      } else {
+                        if (navigator.userAgent.indexOf(" MSIE ") > 0) {
+                          another = showModalDialog(
+                            "/xzyhlx.aspx",
+                            p0,
+                            "dialogheight:20;dialogwidth:20;help:no;status:no;resizable:no"
+                          );
+                        } else {
+                          try {
+                            another = showModalDialog(
+                              "/xzyhlx.aspx",
+                              p0,
+                              "dialogheight:300px;dialogwidth:700px;help:no;status:no;resizable:yes"
+                            );
+                          } catch (err) {
+                            another = open(
+                              "/xzyhlx.aspx",
+                              "",
+                              "left=250, top=200, width=300, height=200, status=no, resizable=no,directories=no, location=no, menubar=no, scrollbars=no, titlebar=no,toolbar=no"
+                            );
+                            another = null;
+                            return;
+                          }
+                        }
+                      }
+                      location = "/default.aspx";
+                      another = null;
+                    }
+                  }
+                    .toString()
+                    .slice(12, -2),
+                  "",
+                  "html"
+                );
+              </script>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td
+                      height="109"
+                      align="right"
+                      valign="top"
+                      background="./resources/index_top.jpg"
+                    >
+                      <table width="640" cellpadding="2" cellspacing="1">
+                        <tbody>
+                          <tr>
+                            <td width="400" align="left">
+                              <span style="display: inline; color: #ff0000"
+                                ><b
+                                  >欢迎你:余翰文
+                                  <a
+                                    onclick="xzyhlx()"
+                                    style="
+                                      display: inline;
+                                      color: #ff0000;
+                                      cursor: pointer;
+                                    "
+                                    title="切换用户类型"
+                                  >
+                                  </a> </b
+                              ></span>
+                            </td>
+                            <td
+                              align="left"
+                              style="color: #ffcc00"
+                              width="80"
+                              nowrap="nowrap"
+                            >
+                              <a style="cursor: pointer" onclick="mobile()"
+                                >&gt;&gt;手机版</a
+                              >
+                            </td>
+                            <td
+                              width="240"
+                              height="1"
+                              align="center"
+                              valign="middle"
+                            >
+                              <table
+                                width="270"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td width="90">
+                                      &gt;
+                                      <a
+                                        href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=05#"
+                                        onclick="window.external.AddFavorite(location.href, document.title);"
+                                        >添加收藏</a
+                                      >
+                                    </td>
+                                    <td width="90">
+                                      &gt;
+                                      <a
+                                        style="cursor: pointer"
+                                        onclick="xzdmsz()"
+                                        >设置密码</a
+                                      >
+                                    </td>
+                                    <td width="90">
+                                      &gt;
+                                      <a
+                                        href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/login.aspx"
+                                        target="_self"
+                                        >注销登录</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--导航-->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td
+                      height="30"
+                      valign="middle"
+                      background="./resources/mainnavbg.gif"
+                    >
+                      <div class="top_nav" style="padding: 0 5px 0 5px">
+                        <span style="display: inline; float: left"
+                          >&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/"
+                            >首页</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/message/default.aspx"
+                            >信息汇总</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=01"
+                            >个人信息</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=02"
+                            >事务大厅</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=03"
+                            >资助</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=04"
+                            >勤工助学</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=05"
+                            >学业学风</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=06"
+                            >成长记录</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=07"
+                            >问卷调查</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=08"
+                            >辅导员评测</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/txxm/default.aspx?dfldm=09"
+                            >网上投票</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/wdzl/DEFAULT.aspx"
+                            >资料下载</a
+                          >&nbsp; |&nbsp;
+                          <a
+                            href="https://client.vpn.nuist.edu.cn/http/webvpnd5247fae5ba0634459d3407dce80e2427246e9c64e07871bc3be6e95a1dcd565/message/DEFAULT2.aspx"
+                            >信箱</a
+                          > </span
+                        ><span
+                          style="display: inline; float: right; color: #ff0000"
+                        >
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table
+                width="100%"
+                border="0"
+                align="center"
+                cellpadding="0"
+                cellspacing="0"
+                style="font-size: 9pt; font-family: 宋体"
+                bgcolor="#FFFFFF"
+              >
+                <tbody>
+                  <tr>
+                    <td height="500" align="center" valign="top">
+                      <table
+                        width="98%"
+                        border="0"
+                        cellspacing="4"
+                        cellpadding="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              style="
+                                color: #0000ff;
+                                font-size: 9pt;
+                                font-weight: bold;
+                              "
+                              align="right"
+                            >
+                              <span id="dfl">学业学风</span>:
+                            </td>
+                            <td>
+                              <span id="xfl">同学互评</span>
+                            </td>
+                            <td align="right" id="xqxz_xs">
+                              当前学期:<select
+                                name="xq_xz"
+                                id="xq_xz"
+                                class="xq"
+                                onchange="load1()"
+                              >
+                                <option value="2022-2023-1">2022-2023-1</option>
+                                <option value="2021-2022-2">2021-2022-2</option>
+                                <option value="2021-2022-1">2021-2022-1</option>
+                                <option value="2020-2021-2">2020-2021-2</option>
+                                <option value="2020-2021-1">2020-2021-1</option>
+                                <option value="2019-2020-2">2019-2020-2</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              width="180"
+                              valign="top"
+                              style="
+                                border: 1px solid #edf5fa;
+                                padding-left: 4px;
+                                padding-right: 4px;
+                                padding-top: 1px;
+                                padding-bottom: 1px;
+                              "
+                            >
+                              <span id="menu" maintainstate="false"
+                                ><div
+                                  style="float: left"
+                                  id="my_menu"
+                                  class="sdmenu"
+                                >
+                                  <div class="">
+                                    <span
+                                      style="
+                                        font-weight: bold;
+                                        background: #7399e0;
+                                      "
+                                      >学业学风</span
+                                    >
+                                    <a
+                                      href='javascript:xzdm("tm_ks_jy","南京信息工程大学入党积极分子培训结业考试2022年版","","南京信息工程大学入党积极分子培训结业考试2022年版")'
+                                      >南京信息工程大学入党积极分子培训结业考试2022年版</a
+                                    >
+                                    <a
+                                      href='javascript:xzdm("st_hp_zh","同学互评","1","同学互评")'
+                                      >同学互评</a
+                                    >
+                                    <a
+                                      href='javascript:xzdm("st_xscgdj","学生成果登记","","学生成果登记")'
+                                      >学生成果登记</a
+                                    >
+                                    <a
+                                      href='javascript:xzdm("st_xskyjz","学生考研进展","","学生考研进展")'
+                                      >学生考研进展</a
+                                    >
+                                    　
+                                  </div>
+                                </div></span
+                              >
+                            </td>
+                            <td
+                              colspan="2"
+                              valign="top"
+                              height="100%"
+                              style="
+                                border: 1px solid #edf5fa;
+                                padding-left: 4px;
+                                padding-right: 4px;
+                                padding-top: 1px;
+                                padding-bottom: 1px;
+                              "
+                            >
+                              <table
+                                width="100%"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="height: 620"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td colspan="2" valign="top" height="100%">
+                                      <iframe
+                                        onload="style.height=r_3_3.document.body.scrollHeight+30"
+                                        id="r_3_3"
+                                        name="r_3_3"
+                                        src="./resources/sthp.html"
+                                        width="100%"
+                                        height="100%"
+                                        scrolling="auto"
+                                        frameborder="0"
+                                        style="height: 963px"
+                                        data-ruffle-polyfilled=""
+                                      ></iframe>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" width="0" height="0">
+                                      <iframe
+                                        id="r_3_4"
+                                        name="r_3_4"
+                                        src="./resources/r_3_4.html"
+                                        width="0"
+                                        height="0"
+                                        scrolling="no"
+                                        frameborder="0"
+                                        data-ruffle-polyfilled=""
+                                      ></iframe>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table
+                style="
+                  border-left: 2px solid #ffffff;
+                  border-right: 2px solid #ffffff;
+                  border-bottom: 1px solid #ffffff;
+                  border-top: 1px solid #ffffff;
+                "
+                cellspacing="0"
+                cellpadding="0"
+                width="952"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" width="100%" height="60">
+                      <table
+                        style="
+                          border-left: 2px solid #ffffff;
+                          border-right: 2px solid #ffffff;
+                          border-bottom: 1px solid #ffffff;
+                          border-top: 1px solid #d8d8d8;
+                        "
+                        width="95%"
+                        cellspacing="0"
+                        cellpadding="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td class="info" align="center">
+                              南京信息工程大学学生处&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南京奥蓝科技有限公司
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input name="xzbz" type="hidden" id="xzbz" />
+      <input name="id_d" type="hidden" id="id_d" />
+      <input name="km" type="hidden" id="km" value="st_hp_zh" />
+      <input name="bt_d" type="hidden" id="bt_d" />
+      <input name="bh_d" type="hidden" id="bh_d" />
+      <input name="xh_d" type="hidden" id="xh_d" />
+      <input name="tjsj_d" type="hidden" id="tjsj_d" />
+      <input name="ylx" type="hidden" id="ylx" value="S" />
+      <input name="y_xdm" type="hidden" id="y_xdm" />
+      <input name="y_yhdj" type="hidden" id="y_yhdj" />
+      <input name="y_stfldm" type="hidden" id="y_stfldm" />
+      <input name="y_cxy" type="hidden" id="y_cxy" />
+      <input name="xqbz" type="hidden" id="xqbz" value="1" />
+      <input name="nd" type="hidden" id="nd" value="2020" />
+      <input name="yxdm" type="hidden" id="yxdm" value="10300" />
+
+    </form>
+    <script type="text/javascript" src="./inject.js"></script>
+  </body>
+</html>
